@@ -137,7 +137,7 @@ namespace OxyPlotProgram
 
             for (int i = 0; i < darkSectionPanel3.Controls.Count; i++)
             {
-                if(i != 0 && parser.Count != darkSectionPanel3.Controls.Count) //Maybe I'm retarded or something, but it fucking kept adding one extra??
+                if(i != 0 && parser.Count != darkSectionPanel3.Controls.Count)
                 {
                     parser.Add(new Parser());
                 }
@@ -158,7 +158,7 @@ namespace OxyPlotProgram
         private DataPoint[] ParsingLogic()
         {
             int total = darkSectionPanel1.Controls.Count;
-            int count = darkSectionPanel2.Controls.Count; //To avoid writing this all the time holy fuck, also, just to cache it for negligble performance gains
+            int count = darkSectionPanel2.Controls.Count;
 
             List<float> temp1 = new List<float>();
             List<float> temp2 = new List<float>();
